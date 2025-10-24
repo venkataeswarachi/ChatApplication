@@ -16,7 +16,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         System.out.println("call from fe");
         registry.addEndpoint("/ws")
-                .setAllowedOrigins("http://localhost:63342")
+                .setAllowedOrigins("https://chatn2n.netlify.app/")
                 .withSockJS();
     }
 
